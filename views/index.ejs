@@ -1,0 +1,45 @@
+<!--LOGIN PAGE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yola</title>
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  
+    <!--STYLESHEETS-->
+    <link rel="stylesheet" href="./stylesheets/default.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="box">
+            <div class="logo">
+                <h1>Team Yola</h1>
+            </div>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+
+                <div class="buttons">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="/register" class="btn">Register</a>
+                </div>       
+            </form>
+            <p id="errorMsg">
+                <% if(locals.errorMessage != null) { %>
+                <%= errorMessage %>
+                <% } %>
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+    --sitePink: #bb3552;
+    --sitePurple: #8d93ec;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a:link{
+    text-decoration: none;
+    color:initial;
+}

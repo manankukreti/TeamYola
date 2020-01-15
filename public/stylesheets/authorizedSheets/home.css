@@ -1,0 +1,22 @@
+body {
+  background-color: #303030;
+}
+
+nav {
+  height: 100vh;
+  width: 100px;
+  background: #151515;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+nav h1 {
+  color: #fff;
+  line-height: 50px;
+  font-size: 1rem;
+  text-align: center;
+  background: var(--sitePink);
+  padding: 10px 0px;
+}
+/*# sourceMappingURL=home.css.map */

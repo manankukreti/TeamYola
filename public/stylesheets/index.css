@@ -1,0 +1,51 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--sitePink);
+}
+
+.box{
+    height:auto;
+    width:45%;
+    padding:50px 50px;
+    background-color: #272838;
+    border-bottom:15px solid var(--sitePurple);
+}
+
+.logo h1{
+    font-size:3rem;
+    color:#fff;
+    margin-bottom:50px;
+}
+
+form input[type="text"], form input[type="password"]{
+    display: block;
+    background: none;
+    border:none;
+    border-bottom: 5px solid #fff;
+    color:#fff;
+    font-size:1.3rem;
+    width:80%;
+    margin:20px 0px;
+    padding:5px 0px;
+}
+
+.buttons{
+    margin-top:50px;
+}
+
+.buttons .btn{
+    background:none;
+    border:3px solid #fff;
+    padding:5px 10px;
+    color:#fff;
+    font-size:1.1rem;
+}
+
+#errorMsg{
+    margin-top:10px;
+    color:rgb(255, 125, 125);
+    font-size:1.2rem;
+}
