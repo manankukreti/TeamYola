@@ -9,10 +9,79 @@
     <!--STYLESHEETS-->
     <link rel="stylesheet" href="stylesheets/default.css">
     <link rel="stylesheet" href="stylesheets/authorizedSheets/home.css">
+
+    <!--FONTS-->
+    <script src="https://kit.fontawesome.com/2253209d81.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     <nav>
-        <h1>TeamYola</h1>
+        <div class="menu">
+            <a href="#" class="active"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-tasks"></i></a>
+            <a href="#"><i class="fas fa-crown"></i></a>
+            <a href="#"><i class="fas fa-folder"></i></a>
+            <a href="#"><i class="fas fa-hourglass"></i></a>
+            <a href="#"><i class="fas fa-cogs"></i></a>
+        </div>
     </nav>
+    <div class="container">
+        <div class="topbar">
+            <div class="username_text">
+                <h1><%=name%></h1>
+                <p><%=position%></p>
+            </div>
+
+            <a href="">Logout</a>
+        </div>
+        
+        <div class="stats">
+
+            <div class="rank">
+                <h1></h1>
+                <div class="position">
+                    <h1>1st</h1>
+                </div>
+            </div>
+
+            <div class="averages">
+                <h1>Averages</h1>
+                <div class="scores">
+                    <div class="score-box">
+                        <h1 id="score_design"><%=designAvg %></h1>
+                        <p>Design</p>
+                    </div>
+                    <div class="score-box">
+                        <h1 id="score_ux"><%= uxAvg %></h1>
+                        <p>UX</p>
+                    </div>
+                    <div class="score-box">
+                        <h1 id="score_code"><%= codeAvg %></h1>
+                        <p>Code</p>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="winloss">
+                <h1>Win Loss</h1>
+                <div class="scores">
+                    <div class="score-box">
+                        <h1 id="score_design">0</h1>
+                        <p>Win Rate</p>
+                    </div>
+                    <div class="score-box">
+                        <h1 id="score_ux">0</h1>
+                        <p>Total Matches</p>
+                    </div>
+                    <div class="score-box">
+                        <h1 id="score_code">0</h1>
+                        <p>Total Wins</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>

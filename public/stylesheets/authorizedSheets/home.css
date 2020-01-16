@@ -1,7 +1,3 @@
-body {
-  background-color: #303030;
-}
-
 nav {
   height: 100vh;
   width: 100px;
@@ -9,14 +5,196 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
+  padding: 20px 0px;
+  border-right: 10px solid var(--sitePink);
+  -webkit-box-shadow: 0px 5px 1px #252525;
+          box-shadow: 0px 5px 1px #252525;
 }
 
-nav h1 {
+.menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu a {
+  color: #e1e1e1;
+  margin: 10px 0px;
+  font-size: 1.5rem;
+}
+
+.menu .active {
+  color: var(--sitePink);
+}
+
+body {
+  background-color: #0a0909;
+}
+
+.container {
+  padding: 20px 20px 20px 120px;
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar a {
   color: #fff;
-  line-height: 50px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.username_text {
+  height: auto;
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--sitePink);
+}
+
+.username_text h1 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.username_text p {
+  color: #bebebe;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.stats {
+  margin-top: 20px;
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.stats .rank {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 3 / 2;
+  border-right: 10px solid var(--sitePink);
+  border-left: 10px solid var(--sitePink);
+}
+
+.stats .rank > h1 {
+  height: 10%;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0px;
+}
+
+.stats .rank .position {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stats .rank .position h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.stats .averages {
+  border-right: 10px solid var(--sitePink);
+}
+
+.stats .winloss {
+  border-right: 10px solid var(--sitePink);
+  border-top: 10px solid var(--sitePink);
+  padding: 10px 0px;
+}
+
+.stats h1 {
+  color: #fff;
   font-size: 1rem;
   text-align: center;
-  background: var(--sitePink);
-  padding: 10px 0px;
+  font-family: "Courier Prime", monospace;
+}
+
+.stats .averages .scores,
+.stats .winloss .scores {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
+}
+
+.stats .averages .scores .score-box h1,
+.stats .winloss .scores .score-box h1 {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 5px auto;
+}
+
+.stats .averages .scores .score-box #score_design,
+.stats .winloss .scores .score-box #score_design {
+  background: #9067c6;
+}
+
+.stats .averages .scores .score-box #score_ux,
+.stats .winloss .scores .score-box #score_ux {
+  background: #f7aef8;
+}
+
+.stats .averages .scores .score-box #score_code,
+.stats .winloss .scores .score-box #score_code {
+  background: #72ddf7;
+}
+
+.stats .averages .scores .score-box p,
+.stats .winloss .scores .score-box p {
+  text-align: center;
+  font-family: "Courier Prime", monospace;
+}
+
+.stats .averages .scores p,
+.stats .winloss .scores p {
+  color: #fff;
 }
 /*# sourceMappingURL=home.css.map */
